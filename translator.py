@@ -1,7 +1,6 @@
 import requests
 import os
 from dotenv import load_dotenv
-from STT import transcribe
 
 # Load environment variables from .env file
 load_dotenv()
@@ -24,6 +23,7 @@ def translate(text, target_lang):
     }
 
     # Send the POST request
+    print("Sending text To DeepL...")
     response = requests.post(url, headers=headers, data=data)
 
     # Check the response status code
@@ -35,11 +35,7 @@ def translate(text, target_lang):
 
     # Extract the translated text from the response
     translated_text = response_json['translations'][0]['text']
-
+    
     # Return the translated text
     return translated_text
-
-transcribed_text = transcribe("output.wav", "JA")
-translated_text = translate(transcribed_text, "EN")
-print(translated_text)
 
