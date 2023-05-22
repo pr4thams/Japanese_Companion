@@ -1,5 +1,7 @@
 import whisper
 
-model = whisper.load_model("base")
-result = model.transcribe("output.wav")
-print(result["text"])
+def transcribe(audio_file, language):
+    model = whisper.load_model("small")
+    result = model.transcribe(audio_file, language=language)
+    return result["text"]
+

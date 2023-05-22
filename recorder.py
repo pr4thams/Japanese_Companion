@@ -51,8 +51,3 @@ class Recorder:
             print("Recording saved.")
         else:
             print("No data recorded.")
-
-
-if __name__ == "__main__":
-    rec = Recorder()
-    rec.record_audio('output.wav', key='space')
