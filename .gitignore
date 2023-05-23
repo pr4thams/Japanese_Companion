@@ -1,5 +1,6 @@
 .env
 output.wav
+AI_response.txt
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

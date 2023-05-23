@@ -35,6 +35,7 @@ def translate(text, target_lang):
 
     # Extract the translated text from the response
     translated_text = response_json['translations'][0]['text']
+    print("DeepL Translation:", translated_text)
     
     # Return the translated text
     return translated_text
