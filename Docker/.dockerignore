@@ -1,0 +1,28 @@
+# Dockerignore for a Python project
+
+# Ignore bytecode
+*.pyc
+*.pyo
+*.pyd
+__pycache__
+
+# Ignore test and documentation directories
+/tests
+/docs
+
+# Ignore git directories and files
+.git
+.gitignore
+
+# Ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore virtual environment directories
+venv/
+env/
