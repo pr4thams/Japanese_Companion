@@ -2,7 +2,7 @@
 FROM python:3.11
 
 # Set a directory for the application
-WORKDIR /app
+WORKDIR /ai_translator
 
 # Copy all the files from the current directory to the docker container
 COPY . .
@@ -11,4 +11,4 @@ COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Command to run the application
-CMD [ "python", "./your-script.py" ]
+CMD [ "python", "./GUI.py" ]
