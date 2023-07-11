@@ -1,21 +1,17 @@
-# My Japanese Companion
+# My Japanese Companion - AI Assistant
 
-## Overview
+My Japanese Companion is an AI-powered conversational assistant, designed to facilitate seamless interactions in Japanese. The platform provides an intuitive UI, enabling user engagement in English or Japanese. Additionally, we are working on enhancements for a multilingual text input system.
 
-- An AI based companion which helps with conversing in japanese.
-- Comes WIth a UI to interact with the companion, integrated with input in English or Japanese.
-- Comes with text input in en or jp as well. (Currently under development)
+## Setup Instructions:
 
-## How to Setup:
+1. Download and extract the code zip file.
+2. Open the extracted folder in your preferred development environment.
+3. Create a `.env` file to store your DeepL, OpenAI, and VoiceVox API keys.
+4. Using Terminal, navigate to the code directory and execute `pip install requirements.txt`.
+5. Run `python GUI.py` to launch the User Interface and begin interacting with the AI companion.
 
-1. Download the code zip file and unzip it.
-2. Open the folder with the coding platform of your choice.
-3. Create an .env file and store your DeepL, OpenAi and VoiceVox API keys.
-4. Open a Terminal window and navigate to your code directory and run `pip install requirements.txt`
-5. Then run `python GUI.py` to open the User Interface and Interact With the Companion.
+## Future Enhancements:
 
-## Future Expansion Plans:
-
-- Integration of more than one output languages.
-- Have an automatic speech detection input and output for more conversation feel.
-- A way to run the program over on cloud for more ease and flexibility of usage accross different platforms.
+- Support for additional output languages.
+- Integration of automatic speech detection for a more conversational experience.
+- Cloud deployment for convenient cross-platform use.
